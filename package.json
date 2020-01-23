@@ -3,5 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "“sakata <r.sakata@gresavail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@testing-library/dom": "^6.11.0",
+    "@testing-library/jest-dom": "^5.0.2",
+    "jest": "^25.1.0"
+  }
 }
