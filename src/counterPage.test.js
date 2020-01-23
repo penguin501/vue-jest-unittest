@@ -8,7 +8,7 @@ it('count upボタンをおすと、カウントラベルがカウントアッ�
   const body = document.querySelector('body')
 
   const button = getByText(body, 'count up')
-  const label = getByText(body, 'カウント:')
+  const label = getByText(body, 'カウント：')
 
   // 最初は0で
   expect(label).toHaveTextContent('0')
