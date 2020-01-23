@@ -1,7 +1,8 @@
-import { mount } from '@vue/test-utils'
+import '@testing-library/jest-dom/extend-expect'
+import { render} from 'vue-testing-library'
 import App from './App.vue'
 
-it('初期表示時にHello Jest!が表示されていること', () => {
-  const wrapper = mount(App)
-  expect(wrapper.html()).toBe('<h1>Hello Jest!</h1>')
+it('render App', () => {
+  const { getByText } = render(App)
+  expect(getByText('Hello Jest!')).toBeInTheDocument()
 })
